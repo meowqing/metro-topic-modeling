@@ -1,0 +1,46 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+venv*/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Логи
+*.log
+logs/
+
+# Документация
+docs/
+README.md
+*.md
+
+# Файлы конфигурации
+*.yml
+*.yaml
+docker-compose*.yml
+.dockerignore
+
+# Временные файлы
+tmp/
+temp/
+*.tmp
+*.temp
+
+data/
+experiments/
+config/
+src/

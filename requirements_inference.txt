@@ -1,0 +1,14 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pandas==2.1.3
+joblib==1.3.2
+scikit-learn==1.3.2
+numpy==1.24.3
+streamlit==1.28.1
+requests==2.31.0
+emoji==2.8.0
+bertopic==0.15.0
+umap-learn==0.5.4
+# Новая версия hdbscan
+hdbscan==0.8.39
+sentence-transformers==2.2.2
