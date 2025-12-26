@@ -1,0 +1,43 @@
+mlflow:
+  experiment_name: "bertopic_experiments"
+  tracking_uri: "http://127.0.0.1:8080"
+
+data:
+  source: "mlflow"
+  mlflow_experiment: "metro_preprocessing"
+  data_run_id: "48bafbae6f8f4d6f95867b50c6631e78" 
+  data_path: "output_data/data_without_stopwords.csv"
+
+embedding:
+  model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+
+umap:
+  n_neighbors: 100
+  n_components: 5
+  min_dist: 0.0
+  metric: "cosine"
+  random_state: 42
+
+hdbscan:
+  min_cluster_size: 50
+  min_samples: 20
+  cluster_selection_epsilon: 0.1
+  metric: "euclidean"
+  cluster_selection_method: "eom"
+
+vectorizer:
+  ngram_range: [2, 3]
+  max_features: 5000
+
+bertopic:
+  language: "russian"
+  min_topic_size: 50
+  nr_topics: "auto"
+  calculate_probabilities: true
+  verbose: true
+
+visualization:
+  figsize: [12, 8]
+  fontsize: 12
+  wordcloud_max_words: 40
+  wordcloud_colormap: "viridis"

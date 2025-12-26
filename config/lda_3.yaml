@@ -1,0 +1,28 @@
+mlflow:
+  tracking_uri: "http://127.0.0.1:8080"
+
+experiment:
+  name: "topic_modeling"
+  version: "v3"
+
+data:
+  source: "mlflow"
+  mlflow_experiment: "metro_preprocessing"
+  data_run_id: "48bafbae6f8f4d6f95867b50c6631e78"        # run_id с данными
+  
+vectorizer:
+  max_features: 3000
+  ngram_range: [2, 3]
+  max_df: 0.7
+  min_df: 5
+  
+lda:
+  n_components: 15
+  max_iter: 100
+  learning_method: "batch"
+  evaluate_every: 5
+  random_state: 42
+  
+evaluation:
+  top_words_count: 10
+  coherence_metric: "c_v" 

@@ -1,0 +1,26 @@
+mlflow:
+  tracking_uri: "http://127.0.0.1:8080"
+
+experiment:
+  name: "topic_modeling"
+  version: "v2"
+
+data:
+  source: "mlflow"
+  vectorizer:
+    run_id: "bd00ff727c6141c388f53a20c4c158a5"
+    experiment_id: "4"
+  data:
+    run_id: "3c6399714b1b45ef87ad3680044ea329"
+    experiment_id: "1"
+  
+lda:
+  n_components: 15
+  max_iter: 100
+  learning_method: "batch"
+  evaluate_every: 5
+  random_state: 42
+
+evaluation:
+  top_words_count: 10
+  coherence_metric: "c_v" 
